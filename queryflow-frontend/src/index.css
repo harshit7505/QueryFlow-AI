@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Syne:wght@400..800&display=swap');
+
+:root {
+  --bg-deep: #080A0F;
+  --bg-surface: #0D1117;
+  --accent-gold: #C9A84C;
+  --accent-blue: #4A9EFF;
+  --success: #2ECC8A;
+  --danger: #E05555;
+  --glass-bg: rgba(13, 17, 23, 0.95);
+  --glass-border: rgba(201, 168, 76, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Mono', monospace;
+  background-color: var(--bg-deep);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .font-syne {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.font-dm {
+  font-family: 'DM Mono', monospace;
+}
+
+@keyframes pulse-red {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(224, 85, 85, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(224, 85, 85, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(224, 85, 85, 0); }
+}
+
+.animate-pulse-red {
+  animation: pulse-red 2s infinite;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
