@@ -156,9 +156,12 @@ docker run -p 8080:8080 \
 
 ---
 
-## Contributing
+## Contributors
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+- **Harshit Mishra** ([harshit7505](https://github.com/harshit7505))
+- **Anshul Thakur** ([Anshulthakur9230](https://github.com/Anshulthakur9230))
+- **Balwant Singh** ([Balwant-singh340](https://github.com/Balwant-singh340))
+- **Dheeraj** ([dheerazzzz](https://github.com/dheerazzzz))
 
 ---
 
@@ -169,4 +172,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 > Built with ☕ Java, ⚛️ React
-
